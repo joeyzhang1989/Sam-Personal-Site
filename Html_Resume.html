@@ -9,6 +9,7 @@
 
     
     *{
+        
         font-family:"Comic Sans MS", cursive, sans-serif;
     }
     
@@ -16,28 +17,84 @@
         font-weight: bold;
     }
 
-    a:visited{
+    .header{
+        width: 900px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+
+    .logo{
+        float: left;
+    }
+
+    .nav{
+        float:right;
+        width: 500px;
+        height: 50px;
+    }
+
+    .nav ul{
+        list-style: none;
+    }
+
+    .nav ul li{
+        float:left;
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height: 100px;
+    }
+
+    .nav ul li a:link, .nav ul li a:visited{
+        text-decoration: none;
+        background-color: white;
+        color:#1679bb;
+    }
+
+    .nav ul li a:hover{
+        background-color:#c3ca37;
+    }
+    
+    .content{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .subheading a:visited{
         color: black;
         text-decoration: none;
     }
 
-    .h2{
-        background-image: linear-gradient(to right, #bfc400, white);
+    .subheading{
+        background-image: linear-gradient(to right, #c3ca37, white);
     }
 
-    .header{
-
-        text-align: center;
-
+    .listing{
+        width: 850px;
+        list-style-image: url('Pics/Arrow_Sign3.JPG');
     }
 
-    .div{
+
+    /* .div{
         margin-right: 100px;
         margin-left: 100px;
+    } */
+
+    .footer{
+        width: 900px;
+        height: 80px;
+        margin: 0 auto;
     }
 
-    ul{
-        list-style-image: url('Pics/Arrow_Sign3.jpg');
+    .backtop{
+        position:fixed;
+        bottom: 100px;
+        right: 10px;
+        width: 50px;
+        text-align: center;
+        color: #1679bb;
+        text-decoration: none;
     }
 
     </style>
@@ -47,21 +104,37 @@
 
 <body>
     
-<div class="div1">
-<h1 class="header">Hanshi Chen</h1>
-<p class="header">Windsor Ontario N9H2N3</p>
-<p class="header">sam.hs.chen@gmail.com   514-575-0470</p>
+<a name="top"></a>
+
+<!-- HEADER PART -->
+
+<div class="header">
+
+<div class="logo">
+<img src="Pics/Logo4.jpg">
 </div>
 
-<hr size="3" width="80%" color="#007acc" align="center">
+<div class="nav">
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">resume</a></li>
+        <li><a href="#">contact</a></li>
+    </ul>
+</div>
+</div>
 
 
-<a name="anker1"></a>
-<div class="div">
-<h2 class="h2"><a href="#anker1">Qualifications Profile</a></h2>
+<!-- CONTENT PART -->
+<div class="content">
+
+<hr size="2" width=900px color="#1679bb" align="center">
+
+
+<div class="main">
+<h2 class="subheading">Qualifications Profile</h2>
 <p>Skilled and results-focused <span class="bold">Mechanical Engineer </span>with significant training and experience to succeed in automotive industry.</p>
 
-<ul>
+<ul class="listing">
     <li>
         <span class="bold">Manufacturing Experience: </span>
         <span><span class="bold">5 years </span>of automotive manufacturing experience worked in 2 tooling companies, familiar working in manufacturing environment, and strong ability to communicate with all levels of colleagues.</span>
@@ -85,14 +158,13 @@
 </ul>
 </div>
 
-<hr size="1" width="80%" color="#007acc" align="center">
 
-<a name="anker2"></a>
-<div class="div">
-    <h2 class="h2"><a href="#anker2">Experience Highlights</a></h2>
+
+<div class="main">
+    <h2 class="subheading">Experience Highlights</h2>
     <p>Electromac Tool, Windsor, ON, Canada</p>
     <span class="bold">Die Design Engineer, </span><span>September 2018 to May 2020</span>
-    <ul>
+    <ul class="listing">
         <li>Participate in multiple die designs of bumper package projects from different OEMs.</li>
         <li>Review with customer and project manager to meet customer standard and meet product GD&T requirement.</li>
         <li>Issue detailed BOM for all die, fixture and automation design.</li>
@@ -101,7 +173,7 @@
 
     <p>Kapco Tool & Die, Windsor, ON, Canada</p>
     <span class="bold">Die Design Engineer, Simulator, </span><span>November 2015 to August 2018</span>
-    <ul>
+    <ul class="listing">
         <li>Evaluated formability and feasibility of proposed process through FEA simulations in Autoform.</li>
         <li>Utilized Pro-E Creo 3.0 to develop detailed die design of different parts such as roof bow, wheel house, B pillar.</li>
         <li>Collaborated with engineering colleagues and allied Project Manager to improve die design.</li>
@@ -111,20 +183,29 @@
 
 </div>
 
-<hr size="1" width="80%" color="#007acc" align="center">
-<a name="anker3"></a>
-<div class="div">
-    <h2 class="h2"><a href="#anker3">Education</a></h2>
+
+
+<div class="main">
+    <h2 class="subheading">Education</h2>
     <ul>
-    <li>
+    <li class="listing">
         <p class="bold">Master of Applied Science, Mechanical Engineering (2015)</p>
         <p>Concordia University, Montreal, Quebec</p>
     </li>
-    <li>
+    <li class="listing">
         <p class="bold">Master of Applied Science, Mechanical Engineering (2015)</p>
         <p>Concordia University, Montreal, Quebec</p>
     </li>
     </ul>
+</div>
+</div>
+<hr size="2" width=900px color="#1679bb" align="center">
+<!-- FOOTER PART -->
+
+<div class="footer">
+<div class="backtop">
+<a href="#top">Top</a>
+</div>
 </div>
 
 </body>

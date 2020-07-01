@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Page/Resume</title>
 
     <style type="text/css">
 
@@ -76,15 +76,20 @@
     }
 
 
-    /* .div{
-        margin-right: 100px;
-        margin-left: 100px;
-    } */
-
     .footer{
         width: 900px;
         height: 80px;
         margin: 0 auto;
+    }
+
+    .sitmap{
+        display: inline;
+        width: 150px;
+        height: 80px;
+        color: black;
+        text-decoration: none;
+        position:relative;
+        left: 100px;
     }
 
     .backtop{
@@ -116,9 +121,9 @@
 
 <div class="nav">
     <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">resume</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="Html_Home.html">home</a></li>
+        <li><a href="Html_Resume.html">resume</a></li>
+        <li><a href="Html_Contact.html">contact</a></li>
     </ul>
 </div>
 </div>
@@ -157,7 +162,6 @@
 
 </ul>
 </div>
-
 
 
 <div class="main">
@@ -203,9 +207,19 @@
 <!-- FOOTER PART -->
 
 <div class="footer">
-<div class="backtop">
-<a href="#top">Top</a>
-</div>
+
+    <dl class="sitemap">
+        <dt>Site Map</dt>
+        <dd>
+            <a href="Html_Home.html" >Home</a><br>
+            <a href="Html_Resume.html" >Resume</a><br>
+            <a href="Html_Contact.html" >Contact</a><br>
+        </dd>
+    </dl>
+
+    <div class="backtop">
+        <a href="#top"><img src="Pics/top.jpg"></a>
+    </div>
 </div>
 
 </body>

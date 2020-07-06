@@ -1,0 +1,75 @@
+* {
+
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.content {
+    width: 960px;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.banner {
+    float: top;
+    width: 960px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 960px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.mainleft {
+    float: left;
+    width: 610px;
+    height: 300px;
+}
+
+.welcome {
+    color: #1679bb;
+    font-size: 25px;
+}
+
+.mainright {
+    float: right;
+    width: 310px;
+    height: 300px;
+    
+}
+
+.rightpic {
+    float: left;
+    width: 100px;
+    height: 225px;
+    
+}
+
+.righttext {
+    float: right;
+    width: 190px;
+    height: 225px;
+    
+}
+
+.socialicon {
+    width: 350px;
+    height: 55px;
+    
+}
+
+.socialicon ul {
+    margin: 0 auto;
+}
+
+.socialicon li {
+    float: left;
+    width: 67px;
+    list-style: none;
+}

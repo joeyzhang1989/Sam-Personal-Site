@@ -1,7 +1,8 @@
 .header {
-    width: 960px;
+    max-width: 960px;
     height: 100px;
     margin: 0 auto;
+    padding: 2px;
 }
 
 
@@ -11,29 +12,23 @@
 
 .nav {
     float: right;
-    width: 500px;
-    height: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
-.nav ul {
-    list-style: none;
-}
-
-.nav ul li {
-    float: left;
-    width: 150px;
-    height: 50px;
+.nav a {
+    height: 35px;
     text-align: center;
-    line-height: 100px;
 }
 
-.nav ul li a:link,
-.nav ul li a:visited {
+.nav a:link,
+.nav a:visited {
     text-decoration: none;
     background-color: white;
     color: #1679bb;
 }
 
-.nav ul li a:hover {
+.nav a:hover {
     background-color: #c3ca37;
 }

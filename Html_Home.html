@@ -6,9 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Page</title>
 
-    <link rel="stylesheet" type="text/css" href="CSS/Header1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="CSS/Footer1.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Header.css">
+
+    <link rel="stylesheet" type="text/css" href="CSS/Footer.css">
 
     <link rel="stylesheet" type="text/css" href="CSS/HomeContent.css">
 
@@ -21,25 +27,25 @@
 
     <!-- HEADER PART -->
 
-    <div class="header">
+    <div class="row header">
 
-        <div class="logo">
+        <div class="col-5 logo">
             <img src="Pics/Logo1.jpg">
         </div>
 
-        <div class="nav">
-            <ul>
-                <li><a href="Html_Home.html">home</a></li>
-                <li><a href="Html_Resume.html">resume</a></li>
-                <li><a href="Html_Contact.html">contact</a></li>
-            </ul>
+        <div class="col-7 nav">
+            <div><a href="Html_Home.html">Home</a></div>
+            <div><a href="Html_Resume.html">Resume</a></div>
+            <div><a href="Html_Contact.html">Contact</a></div>
         </div>
     </div>
 
-    <hr style="size:2px; max-width:960px" color="#1679bb">
+    
 
 
     <!-- CONTENT PART -->
+
+    <hr style="size:2px; max-width:960px" color="#1679bb">
 
     <div class="content">
 
@@ -48,8 +54,8 @@
 
         <!-- </div> -->
 
-        <div class="main">
-            <div class="mainleft">
+        <div class="p-2 row main">
+            <div class="col-md-7 mainleft">
                 <p class="welcome"><span class="bold">Welcome!</span></p>
                 <p class="maintext">I created this place because my endless 
                     digital circles need a way to come together.
@@ -63,27 +69,26 @@
                     you.
                     <br><br>You see, folks, I'm all about the <span class="bold">
                         connections.</span></p>
-
             </div>
 
-            <div class="mainright">
-                <div class="rightpic">
+            <div class="col-md-5 mainright">
+                <div class="row">
+                <div class="col-md-5 rightpic">
                     <img src="Pics/Portrait.jpg" style="max-width: 100%; height: auto;">
                 </div>
 
-                <div class="righttext">
+                <div class="col-md-7 righttext">
                     <span class="bold">I am not:</span> a social media ninja, guru, maven, or 'expert'. <span
                         class="bold">I am:</span> a digital media native - and addict - who gets paid to do what he
                     loves. (Life is good.)
                 </div>
+                </div>
 
-                <div class="socialicon">
-                    <ul>
-                        <li><a href="https://www.linkedin.com/feed/"><img src="Pics/Linkedin.jpg" style="max-width: 80%; height: auto;"></a></li>
-                        <li><a href="https://www.facebook.com/"><img src="Pics/Facebook.jpg" style="max-width: 80%; height: auto;"></a></li>
-                        <li><a href="https://twitter.com"><img src="Pics/Tweeter.jpg" style="max-width: 80%; height: auto;"></a></li>
-                        <li><a href="https://www.instagram.com"><img src="Pics/Ins.jpg" style="max-width: 80%; height: auto;"></a></li>
-                    </ul>
+                <div class="row socialicon">
+                        <div><a href="https://www.linkedin.com/feed/"><img src="Pics/Linkedin.jpg" style="max-width: 80%; height: auto;"></a></div>
+                        <div><a href="https://www.facebook.com/"><img src="Pics/Facebook.jpg" style="max-width: 80%; height: auto;"></a></div>
+                        <div><a href="https://twitter.com"><img src="Pics/Tweeter.jpg" style="max-width: 80%; height: auto;"></a></div>
+                        <div><a href="https://www.instagram.com"><img src="Pics/Ins.jpg" style="max-width: 80%; height: auto;"></a></div>
                 </div>
 
             </div>
@@ -98,14 +103,12 @@
 
     <div class="footer">
 
-        <dl class="sitemap">
-            <dt>Site Map</dt>
-            <dd class="sitemap">
-                <a href="Html_Home.html">Home</a>
-                <a href="Html_Resume.html">Resume</a>
-                <a href="Html_Contact.html">Contact</a>
-            </dd>
-        </dl>
+        <p>Site Map</p>
+        <div class="row sitemap">
+                <div class="col"><a href="Html_Home.html">Home</a></div>
+                <div class="col"><a href="Html_Resume.html">Resume</a></div>
+                <div class="col"><a href="Html_Contact.html">Contact</a></div>
+        </div>
 
         <div class="backtop">
             <a href="#backtotop"><img src="Pics/top.jpg"></a>

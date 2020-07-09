@@ -17,6 +17,13 @@
     justify-content: space-around;
 }
 
+/* .navbar-nav {
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+} */
+
 .nav a {
     height: 35px;
     text-align: center;

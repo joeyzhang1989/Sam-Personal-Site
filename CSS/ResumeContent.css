@@ -1,16 +1,45 @@
 * {
 
     font-family: "Comic Sans MS", cursive, sans-serif;
-}
 
-.bold {
-    font-weight: bold;
 }
 
 .content {
     max-width: 960px;
     margin: 0 auto;
     padding: 10px;
+}
+
+.qualification, .experience, .education{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.subTitle{
+    display: flex;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: radial-gradient(80px at center, #c3ca37, white);
+}
+
+
+.Text{
+    word-break: keep-all;
+    margin-top: 15px;
+}
+
+.skill, .language{
+    margin-top: 15px;
+}
+
+.skill{
+    margin-bottom: 50px;
 }
 
 .subheading a:visited {

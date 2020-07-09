@@ -13,11 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="CSS/Header.css">
+    <link rel="stylesheet" type="text/css" href="CSS/min-Header.css">
 
-    <link rel="stylesheet" type="text/css" href="CSS/Footer.css">
+    <link rel="stylesheet" type="text/css" href="CSS/min-Footer.css">
 
-    <link rel="stylesheet" type="text/css" href="CSS/ResumeContent.css">
+    <link rel="stylesheet" type="text/css" href="CSS/min-ResumeContent.css">
 
 </head>
 
@@ -28,98 +28,122 @@
 
     <!-- HEADER PART -->
 
-    <div class="header">
+    <div class="row header">
 
-        <div class="logo">
+        <div class="col-5 logo">
             <img src="Pics/Logo1.jpg">
         </div>
 
-        <div class="nav">
-            <a href="Html_Home.html">Home</a>
-            <a href="Html_Resume.html">Resume</a>
-            <a href="Html_Contact.html">Contact</a>
+        <div class="col-7 nav">
+            <div><a href="Html_Home.html">Home</a></div>
+            <div><a href="Html_Resume.html">Resume</a></div>
+            <div><a href="Html_Contact.html">Contact</a></div>
         </div>
+
     </div>
 
     <hr style="size:2px; max-width:960px" color="#1679bb">
 
     <!-- CONTENT PART -->
-    <div class="content">
+    <div class="row content">
 
-        <div class="main">
-            <h2 class="subheading">Qualifications Profile</h2>
-            <p>Skilled and results-focused <span class="bold">Mechanical Engineer </span>with significant training and
-                experience to succeed in automotive industry.</p>
+        <div class="col-md-9">
+            <div class="row qualification">
+                <h5 class="col-md-3 col-sm-3 subTitle">Qualifacations Profile</h5>
+                <div class="col-md-9 col-sm-9 Text">
+                    <p>Skilled and results-focused <strong>Mechanical Engineer</strong> 
+                        with significant training and experience to succeed 
+                        in automotive industry.</p>
+                    <ul>
+                    <li><strong>Manufacturing Experience: 5 years</strong> of automotive 
+                        manufacturing experience worked in 2 tooling companies, 
+                        familiar working in manufacturing environment, and 
+                        strong ability to communicate with all levels of colleagues.</li>
+                    <li><strong>Design Engineering:</strong> Extensive experience multiple 
+                        2D and 3D modeling software as a CAD designer, 
+                        including <strong>NX, Pro-E, Catia, AutoCAD</strong>. Robust 
+                        knowledge of mechanical engineering with Bachelor 
+                        and Master Degrees.</li>
+                    <li><strong>Problem-solving & Communication:</strong> Demonstrated 
+                        strong ability to identify, analyze and solve 
+                        problems. Effectively communicate ideas and concept, 
+                        ability to collaborate on cross-functional teams.</li>
+                    </ul>
+                </div>
+            </div>
 
-            <ul class="listing">
-                <li>
-                    <span class="bold">Manufacturing Experience: </span>
-                    <span><span class="bold">5 years </span>of automotive manufacturing experience worked in 2 tooling
-                        companies, familiar working in manufacturing environment, and strong ability to communicate with
-                        all levels of colleagues.</span>
-                </li>
+            <hr style="size:1px; width:90%; margin-left: 0;" color="grey">
 
-                <li>
-                    <span class="bold">Design Engineering: </span>
-                    <span>Extensive experience multiple 2D and 3D modeling software as a CAD designer, including <span
-                            class="bold">NX, Pro-E, Catia, AutoCAD</span>. Robust knowledge of mechanical engineering
-                        with Bachelor and Master Degrees.</span>
-                </li>
+            <div class="row experience">
+                <h5 class="col-md-3 col-sm-3 subTitle">Experience Highlights</h5>
+                <div class="col-md-9 col-sm-9 Text">
+                    
+                    <p>Electromac Tool, Windsor, ON, Canada <br> <strong>Die Design Engineer</strong>, September 2018 to May 2020</p>
+                    <ul>
+                    <li>Participate in multiple die designs of bumper package 
+                        projects from different OEMs.</li>
+                    <li>Review with customer and project manager to meet customer 
+                        standard and meet product GD&T requirement.</li>
+                    <li>Issue detailed BOM for all die, fixture and automation design.</li>
+                    <li>Communicate with machinist and tool maker to improve die 
+                        design and provide engineering support.</li>
+                    </ul>
+                    <br>
+                    <p>Kapco Tool & Die, Windsor, ON, Canada <br> <strong>
+                        Die Design Engineer</strong>, Simulator, November 2015 to August 2018</p>
+                    <ul>
+                    <li>Evaluated formability and feasibility of proposed 
+                        process through FEA simulations in Autoform.</li>
+                    <li>Utilized Pro-E Creo 3.0 to develop detailed die design of different 
+                        parts such as roof bow, wheel house, B pillar.</li>
+                    <li>Collaborated with engineering colleagues and allied 
+                        Project Manager to improve die design.</li>
+                    <li>Contributed to improving efficiency of CAD operations.</li>
+                    </ul>
+                </div>
+            </div>
 
-                <li>
-                    <span class="bold">Problem-solving & Communication: </span>
-                    <span>Demonstrated strong ability to identify, analyze and solve problems. Effectively communicate
-                        ideas and concept, ability to collaborate on cross-functional teams.</span>
-                </li>
+            <hr style="size:1px; width:90%; margin-left: 0" color="grey">
 
-                <li>
-                    <span class="bold">Key Strengths: </span>
-                    <span>Fast learner. Willing to improve and pursuing P.Eng. Cross-cultural communication skills.
-                        Language abilities in English, Mandarin, and French as a beginner.</span>
-                </li>
+            <div class="row education">
+                <h5 class="col-md-3 col-sm-3 subTitle">Education</h5>
+                <div class="col-md-9 col-sm-9 Text">
 
-            </ul>
+                    <p><strong>Master of Applied Science, Mechanical Engineering</strong> (2015)</p>
+                    <p>Concordia University, Montreal, Quebec</p>
+                    <br>
+                    <p><strong>Bachelor of Engineering, Mechanical Engineering</strong> (2012) </p>
+                    <p>Tianjin University of Science & Technology (TUST), Tianjin, China</p>
+                </div>
+            </div>
         </div>
 
-
-        <div class="main">
-            <h2 class="subheading">Experience Highlights</h2>
-            <p>Electromac Tool, Windsor, ON, Canada</p>
-            <span class="bold">Die Design Engineer, </span><span>September 2018 to May 2020</span>
-            <ul class="listing">
-                <li>Participate in multiple die designs of bumper package projects from different OEMs.</li>
-                <li>Review with customer and project manager to meet customer standard and meet product GD&T
-                    requirement.</li>
-                <li>Issue detailed BOM for all die, fixture and automation design.</li>
-                <li>Communicate with machinist and tool maker to improve die design and provide engineering support.
-                </li>
-            </ul>
-
-            <p>Kapco Tool & Die, Windsor, ON, Canada</p>
-            <span class="bold">Die Design Engineer, Simulator, </span><span>November 2015 to August 2018</span>
-            <ul class="listing">
-                <li>Evaluated formability and feasibility of proposed process through FEA simulations in Autoform.</li>
-                <li>Utilized Pro-E Creo 3.0 to develop detailed die design of different parts such as roof bow, wheel
-                    house, B pillar.</li>
-                <li>Collaborated with engineering colleagues and allied Project Manager to improve die design.</li>
-                <li>Contributed to improving efficiency of CAD operations.</li>
-                <li>Provided engineering support for tool makers and machinists at shop floor.</li>
-            </ul>
-
-        </div>
-
-        <div class="main">
-            <h2 class="subheading">Education</h2>
-            <ul>
-                <li class="listing">
-                    <p class="bold">Master of Applied Science, Mechanical Engineering (2015)</p>
-                    <p>Concordia University, Montreal, Quebec</p>
-                </li>
-                <li class="listing">
-                    <p class="bold">Master of Applied Science, Mechanical Engineering (2015)</p>
-                    <p>Concordia University, Montreal, Quebec</p>
-                </li>
-            </ul>
+        <div class="col-md-3">
+            <div class="row skill">
+                <div class="col-lg-4 skillPic">
+                    <img src="Pics/skillPic.jpg"></a>
+                </div>
+                <div class="col-lg-8 skillText">
+                    <h5 class="pt-3">Skills</h5>
+                    <hr style="size:1px; width:70%; margin-left: 0" color="grey">
+                    <p>Photoshop</p>
+                    <p>React</p>
+                    <p>Bootstrap</p>                        
+                </div>
+            </div>
+            <div class="row language">
+                <div class="col-lg-4 lanPic">
+                    <img src="Pics/langPic.png"></a>
+                </div>
+                <div class="col-lg-8 lanText">
+                    <h5 class="pt-3">Languages</h5>
+                    <hr style="size:1px; width:70%; margin-left: 0" color="grey">
+                    <p>Html</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>Java</p>
+                </div>
+            </div>
         </div>
         
     </div>
@@ -138,6 +162,8 @@
             <div class="col"><a href="Html_Contact.html">Contact</a></div>
         </div>
 
+        <hr style="size:1px; max-width:25%; margin-left: 0;" color="grey">
+        <p class="copyright">©Copyright 2020-2021. All Rights Reserved</p>
 
         <div class="backtop">
             <a href="#backtotop"><img src="Pics/top.jpg"></a>

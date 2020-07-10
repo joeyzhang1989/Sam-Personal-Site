@@ -13,11 +13,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="CSS/min-Header.css">
+    <link rel="stylesheet" type="text/css" href="CSS/Header.css">
 
-    <link rel="stylesheet" type="text/css" href="CSS/min-Footer.css">
+    <!-- <link rel="stylesheet" type="text/css" href="CSS/Footer.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="CSS/min-ContactContent.css">
+    <link rel="stylesheet" type="text/css" href="CSS/ContactContent.css">
 
 </head>
 
@@ -42,12 +42,9 @@
 
     </div>
 
-    
-
+    <hr class="HRline">
 
     <!-- CONTENT PART -->
-
-    <hr style="size:2px; max-width:960px" color="#1679bb">
 
     <div class="content">
         <br><br>
@@ -57,15 +54,37 @@
             <ul class="contactinfo">
                 <li>Email: sam.hs.chen@gmail.com</li>
                 <li>Phone: 514-508-4475</li>
-                <li>Address:Windsor Ontario N9H2N3</li>
+                <li>Address: Windsor Ontario N9H2N3</li>
             </ul>
         </div>
 
+        
+        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+        </script>
+        
+        <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "sameasychen");
+
+            // or enable responsive functionality:
+            GitHubCalendar(".calendar", "sameasychen", { responsive: true });
+
+            // Use a proxy
+            GitHubCalendar(".calendar", "sameasychen", { proxy(sameasychen) { return 
+            fetch(`https://your-proxy.com/github?user=${sameasychen}`).then(r => r.text()) }});
+        </script>
+
     </div>
 
-    <hr style="size:2px; max-width:960px" color="#1679bb">
-
     <!-- FOOTER PART -->
+
+    <hr class="HRline">
 
     <div class="footer">
 

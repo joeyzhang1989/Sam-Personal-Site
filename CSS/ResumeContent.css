@@ -55,3 +55,19 @@
     max-width: 850px;
     list-style-image: url('Pics/Arrow_Sign3.JPG');
 }
+
+.hrLine90{
+    height:1px; 
+    border-width:0;
+    width:90%; 
+    margin-left: 0;
+    background-color:grey;
+}
+
+.hrLine70{
+    height:1px; 
+    border-width:0;
+    width:70%; 
+    margin-left: 0;
+    background-color:grey;
+}

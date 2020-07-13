@@ -53,10 +53,22 @@
     padding: 2px;
 }
 
-/* .contactme{
-    text-align: center;
-    align-items: center;
-} */
+.midLine{
+    width: 1px;
+    background-color: black;
+}
+
+.inputArea{
+    width: 100%;
+}
+
+.contactme{
+    height: 50px;
+}
+
+.lineheight{
+    line-height: 135%;
+}
 
 .sitemap{
     color: black;

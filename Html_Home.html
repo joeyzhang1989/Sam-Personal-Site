@@ -12,9 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="CSS/Header.css">
-
-    <!-- <link rel="stylesheet" type="text/css" href="CSS/Footer.css"> -->
+    <link rel="stylesheet" type="text/css" href="CSS/HeaderFooter.css">
 
     <link rel="stylesheet" type="text/css" href="CSS/HomeContent.css">
 
@@ -133,8 +131,7 @@
                     <div class="form-row">
 
                         <div class="col form-group">
-                            <input type="text" class="inputArea" name="email form-control" id="emailID"
-                                pattern=".+@.+.com" placeholder="Email" required>
+                            <input type="text" class="inputArea" name="email form-control" id="emailID" pattern=".+@.+.com" placeholder="Email" required>
                         </div>
                         <div class="col form-group">
                             <input type="tel" class="inputArea" name="tel form-contol" id="telID"
@@ -184,13 +181,12 @@
         var telE = document.getElementById('telID');
         var messageE = document.getElementById('messageID');
 
-
         submitE.onclick = function () {
             console.log("Name is " + nameID["value"]);
             console.log("Email is " + emailID["value"]);
             console.log("Tel is " + telID["value"]);
             console.log("Message is " + messageID["value"]);
-            event.preventDefault();
+            // event.preventDefault();
         }
 
     </script>

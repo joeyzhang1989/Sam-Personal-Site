@@ -1,15 +1,45 @@
 * {
 
     font-family: "Comic Sans MS", cursive, sans-serif;
-}
 
-.bold {
-    font-weight: bold;
 }
 
 .content {
     max-width: 960px;
     margin: 0 auto;
+    padding: 10px;
+}
+
+.qualification, .experience, .education{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+
+.subTitle{
+    display: flex;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: radial-gradient(80px at center, #c3ca37, white);
+}
+
+
+.Text{
+    word-break: keep-all;
+    margin-top: 15px;
+}
+
+.skill, .language{
+    margin-top: 15px;
+}
+
+.skill{
+    margin-bottom: 50px;
 }
 
 .subheading a:visited {
@@ -24,4 +54,20 @@
 .listing {
     max-width: 850px;
     list-style-image: url('Pics/Arrow_Sign3.JPG');
+}
+
+.hrLine90{
+    height:1px; 
+    border-width:0;
+    width:90%; 
+    margin-left: 0;
+    background-color:grey;
+}
+
+.hrLine70{
+    height:1px; 
+    border-width:0;
+    width:70%; 
+    margin-left: 0;
+    background-color:grey;
 }

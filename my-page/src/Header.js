@@ -3,6 +3,8 @@ import Nav from './Nav'
 import Logo from './pics/Logo.jpg'
 
 
+
+
 class Header extends React.Component {
 
   constructor() {
@@ -13,19 +15,17 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="Header">
-        <div className="row">
-
-          <div className="col-4">
-            <img src={Logo} alt='Logo' />
+      <div className="Header mx-auto container">
+        <div className="container row">
+          <div className="logopic col-4">
+            <img src={Logo} className="img-fluid mx-auto d-block" alt='Logo'/>
           </div>
-          <div className="col-8">
+
+          <div className="navlist col-8">
             <Nav />
           </div>
         </div>
-        <div>
-          <hr className="HRline" />
-        </div>
+        
       </div>
     );
   }

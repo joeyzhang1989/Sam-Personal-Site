@@ -1,36 +1,138 @@
 import React from 'react';
 
+const initialState={
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+}
+
+class ContactForm extends React.Component {
+
+    constructor(){
+        super()
+        this.state={
+            name: "",
+            email: "",
+            phone: "",
+            message: "",
+            nameError: "",
+            emailError:"",
+            phoneError:"",
+            messageError:""
+        }
+        this.handleChange= this.handleChange.bind(this)
+        this.handleSubmit= this.handleSubmit.bind(this)
+    }
+
+    validate(){
+
+        this.setState({nameError:"",emailError:"",messageError:""})
 
 
-function ContactForm() {
+        if(!this.state.name){
+            this.setState({nameError: "Required"});
+            return false;
+        }else if(!this.state.email){
+            this.setState({emailError: "Required"});
+            return false;
+        }else if(this.state.email && !this.state.email.match(/.+@.+..+/g)){
+            this.setState({emailError: "*Invalid email"});
+            return false;
+        }else if(!this.state.message){
+            this.setState({messageError: "Required"});
+            return false;
+        }else if(this.state.message&&this.state.message.length<10){
+            this.setState({messageError: "*Message too short, limit between 4~140 letters"})
+            return false;
+        }else if(this.state.message&&this.state.message.length>140){
+            this.setState({messageError: "*Message too long, limit between 4~140 letters"})
+            return false;
+        }
+        else{
+        return true;
+        }
+
+    }
+
+    handleSubmit(event){
+
+        event.preventDefault();
+        const isValid =this.validate();
+        if(!isValid){
+            console.log("validation wrong");
+            this.setState(initialState)
+        }else {
+            console.log("validation correct");
+            this.setState({nameError:"",emailError:"",messageError:""})
+            
+        }
+
+    }
+
+
+
+    handleChange(event) {
+        const { name, value} = event.target
+
+        this.setState({ [name]: value })
+
+        // this.setState({nameError:"",emailError:"",messageError:""})
+    
+
+    }
+
+    render(){
     return (
         <div className="ContactForm">
             <h4 class="font-weight-bold contactme text-center">CONTACT ME</h4>
             <div className="row">
                 <div className="mb-4 col-sm-6">
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <div className="form-group">
                             <input
                                 type="text"
+                                name="name"
+                                value={this.state.name}
                                 className="inputArea"
-                                placeholder="Name" />
+                                placeholder="Name*"
+                                onChange={this.handleChange}
+                                />
+                                <label className="validateNote">
+                                {this.state.nameError}
+                                </label>
                         </div>
+                       
+                    
 
                         <div className="form-row">
 
                             <div class="col form-group">
                                 <input
                                     type="text"
+                                    name="email"
+                                    value={this.state.email}
                                     className="inputArea"
-                                    placeholder="Name"
+                                    placeholder="Email*"
+                                    onChange={this.handleChange}
                                 />
+                                <label className="validateNote">
+                                {this.state.emailError}
+                                </label>
                             </div>
+                            
                             <div class="col form-group">
                                 <input
                                     type="text"
+                                    name="phone"
+                                    value={this.state.phone}
                                     className="inputArea"
-                                    placeholder="Name"
+                                    placeholder="Telephone"
+                                    onChange={this.handleChange}
                                 />
+                                <label className="validateNote">
+                                {this.state.phoneError}
+                                </label>
                             </div>
 
                         </div>
@@ -38,15 +140,21 @@ function ContactForm() {
                         <div className="form-group">
                             <input
                                 type="text"
+                                name="message"
+                                value={this.state.message}
                                 className="inputArea"
-                                placeholder="Name"
+                                placeholder="Message*"
+                                onChange={this.handleChange}
                             />
+                            <label className="validateNote">
+                            {this.state.messageError}
+                            </label>
                         </div>
 
-                        <buttom
+                        <button
                             type="submit"
                             className="inputArea"
-                        >Submit</buttom>
+                        >Send</button>
 
                 </form>
                 </div>
@@ -73,8 +181,12 @@ function ContactForm() {
 
 
             </div>
+
+
+
         </div>
     );
+    }
 }
 
 export default ContactForm;

@@ -1,5 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import { Link } from 'react-router-dom';
+
 
 
 class Nav extends React.Component {
@@ -13,9 +15,13 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="row nav">
+        <Link to="/">
         <div className="col">Home</div>
-        <div className="col">Resume</div>
+        </Link>
+        {/* <div className="col">Resume</div> */}
+        <Link to="/contact">
         <div className="col">Contact</div>
+        </Link>
       </div>
     );
   }

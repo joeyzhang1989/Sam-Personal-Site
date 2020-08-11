@@ -3,14 +3,31 @@ import './App.css';
 import Header from './Header.js'
 import Footer from './Footer.js'
 import Home from './Home.js'
+import Contact from './Contact'
+import Nav from './Nav'
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Home/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        
+        <Header />
+
+        <Home/>
+
+        {/* <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/contact" component={Contact} />
+        
+        </Switch> */}
+
+        <Footer />
+      </div>
+
+    </Router>
+
   );
 }
 

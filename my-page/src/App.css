@@ -1,15 +1,32 @@
+
+
 .App {
-  max-width: 960px;
-  margin: 0 auto;
   
-}
+  margin: 0 auto;
+
+  /* box-sizing: content-box; */
+  padding: 0;
+} 
+
 
 .Header {
-  height: 125px;
-  max-width: 960px;
-  margin: 0 auto;
+  background-color: #79c1cf;
+  
+  max-width:960px;
+  /* padding: 0; */
+}
+
+.Home{
+ 
+  padding: 0;
+  max-width:960px;
+}
+
+.IntroSection{
+  
   padding: 2px;
 }
+
 
 .nav {
   display: flex;
@@ -26,15 +43,7 @@
   background-color:#1679bb;
 }
 
-.Home{
-  min-height: 100px;
-  display: block;
-}
 
-.mainpic{
-  max-width: 100%;
-  height: auto;
-}
 
 .midLine{
   width: 1px;
@@ -43,4 +52,15 @@
 
 .inputArea{
   width: 100%;
+}
+
+.validateNote{
+  color: red;
+  font-size: small;
+  line-height:100%;
+}
+
+.ContactForm{
+  position: relative;
+  
 }

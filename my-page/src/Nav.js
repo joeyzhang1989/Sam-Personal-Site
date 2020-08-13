@@ -6,23 +6,29 @@ import { Link } from 'react-router-dom';
 
 class Nav extends React.Component {
 
-  constructor(){
+  constructor() {
     super()
-    
+
   }
 
 
   render() {
     return (
-      <div className="row nav">
-        <Link to="/">
-        <div className="col">Home</div>
+      <div className="row nav mx-auto my-auto h-100">
+        
+        <Link className="link col" to="/">
+        Home
         </Link>
-        {/* <div className="col">Resume</div> */}
-        <Link to="/contact">
-        <div className="col">Contact</div>
+        <Link className="link col" to="/Resume">
+        Resume
         </Link>
+        <Link className="link col" to="/Contact">
+        Contact
+        </Link>
+        
       </div>
+
+
     );
   }
 }

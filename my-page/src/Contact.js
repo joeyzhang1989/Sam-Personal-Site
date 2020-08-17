@@ -1,10 +1,10 @@
 import React from 'react';
 import ContactForm from './ContactForm'
-import Header from './Header';
 
 
 
-function Footer() {
+
+function Contact() {
   return (
     <div className="Contact">
 
@@ -24,4 +24,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Contact;

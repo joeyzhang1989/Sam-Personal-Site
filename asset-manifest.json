@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Sam-Personal-Site/my-page/static/css/main.beb49fef.chunk.css",
+    "main.js": "/Sam-Personal-Site/my-page/static/js/main.569f995b.chunk.js",
+    "main.js.map": "/Sam-Personal-Site/my-page/static/js/main.569f995b.chunk.js.map",
+    "runtime-main.js": "/Sam-Personal-Site/my-page/static/js/runtime-main.a894dada.js",
+    "runtime-main.js.map": "/Sam-Personal-Site/my-page/static/js/runtime-main.a894dada.js.map",
+    "static/js/2.aa0dfa54.chunk.js": "/Sam-Personal-Site/my-page/static/js/2.aa0dfa54.chunk.js",
+    "static/js/2.aa0dfa54.chunk.js.map": "/Sam-Personal-Site/my-page/static/js/2.aa0dfa54.chunk.js.map",
+    "index.html": "/Sam-Personal-Site/my-page/index.html",
+    "precache-manifest.579f9a33f127fc494c00e9d550f2d514.js": "/Sam-Personal-Site/my-page/precache-manifest.579f9a33f127fc494c00e9d550f2d514.js",
+    "service-worker.js": "/Sam-Personal-Site/my-page/service-worker.js",
+    "static/css/main.beb49fef.chunk.css.map": "/Sam-Personal-Site/my-page/static/css/main.beb49fef.chunk.css.map",
+    "static/js/2.aa0dfa54.chunk.js.LICENSE.txt": "/Sam-Personal-Site/my-page/static/js/2.aa0dfa54.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Sam-Personal-Site/my-page/static/media/homebanner.fffac679.jpg",
+    "static/media/react_gif.gif": "/Sam-Personal-Site/my-page/static/media/react_gif.60d847f8.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a894dada.js",
+    "static/js/2.aa0dfa54.chunk.js",
+    "static/css/main.beb49fef.chunk.css",
+    "static/js/main.569f995b.chunk.js"
+  ]
+}

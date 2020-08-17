@@ -1,5 +1,5 @@
 import React from 'react';
-import GithubCalenderSec from "./GithubCalenderSec";
+// import GithubCalenderSec from "./GithubCalenderSec";
 
 function Resume() {
     return (
@@ -76,11 +76,11 @@ function Resume() {
                             <h4>Personal Info</h4>
                             <hr></hr>
                             <h6>Phone:</h6>
-                            <p>514-575-0470</p>
+                            <p>123-456-789</p>
                             <h6>Email:</h6>
                             <p>sam.hs.chen@gmail.com</p>
                             <h6>Github:</h6>
-                            <p>514-575-0470</p>
+                            <p>123-456-789</p>
                         </div>
                         <div className="mt-4">
                             <h4>Skills</h4>
